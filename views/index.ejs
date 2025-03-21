@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopify Orders</title>
+</head>
+<body>
+  <h1>Recent Shopify Orders</h1>
+  <ul>
+    <% orders.forEach(order => { %>
+      <li>
+        <strong><%= order.name %></strong> - <%= order.email %> - $<%= order.total_price %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
